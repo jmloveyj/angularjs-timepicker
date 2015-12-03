@@ -13,6 +13,8 @@ style timepicker by modifying css.
 ###How to fit the directive in your code
 Please check the demo code. Just simply put the directive in your html desired position:
 
-<timepicker hour='hour' minute='minute'></timepicker>
+
+    <timepicker hour='hour' minute='minute'></timepicker>
+
 
 note: *two-way data binding $scope.hour and $scope.minute by 'hour' and 'minute' property*
