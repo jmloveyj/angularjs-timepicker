@@ -18,3 +18,5 @@ Please check the demo code. Just simply put the directive in your html desired p
 
 
 note: *two-way data binding $scope.hour and $scope.minute by 'hour' and 'minute' property*
+
+![timepicker demo](http://ww2.sinaimg.cn/thumb150/61dcf372jw1eymf4yhh0jj20hi0g6jsc.jpg)
