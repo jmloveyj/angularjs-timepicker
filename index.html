@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>demo for IOS stye time picker</title>
+    <style type="text/css">
+    body {
+        background-color: #f0f3f3;
+    }
+    </style>
+    <script src="./jquery.min.js"></script>
+    <script src="./angular.min.js"></script>
+    <script src="./demoCtr.js"></script>
+    <script src='./timepickerDirective.js'></script>
+</head>
+
+<body ng-app="demoApp" ng-controller="demoCtr">
+    <div style="margin-top:50px;">
+        <timepicker hour='hour' minute='minute'></timepicker>
+        <div style="margin-top:50px;font-size:56px; text-align: center">{{hour}}:{{minute}}</div>
+    </div>
+</body>
+
+</html>

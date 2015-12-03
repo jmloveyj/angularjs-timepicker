@@ -1,0 +1,120 @@
+<div class="timerPicker">
+    <style type="text/css">
+    .timerPicker {
+        width: 100%;
+        height: 202px;
+    }
+    
+    .preCheckFrame {
+        width: 100%;
+        height: 60px;
+        border-bottom: 1px solid #d5d5d5;
+    }
+    
+    .activeCheckFrame {
+        width: 100%;
+        height: 42px;
+    }
+    
+    .postCheckFrame {
+        width: 100%;
+        height: 60px;
+        border-top: 1px solid #d5d5d5;
+    }
+    
+    #slots {
+        position: relative;
+        top: -42px;
+        width: 40%;
+        height: 202px;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+    }
+    
+    #hourSlotWrapper {
+        perspective: 800px;
+        perspective-origin: 200px;
+        -webkit-perspective: 800px;
+        -webkit-perspective-origin: 200px;
+        position: absolute;
+        left: 90px;
+        top: 80px;
+    }
+    
+    #minuteSlotWrapper {
+        perspective: 800px;
+        perspective-origin: 200px;
+        -webkit-perspective: 800px;
+        -webkit-perspective-origin: 200px;
+        position: absolute;
+        right: 70px;
+        top: 80px;
+    }
+    
+    #timeLabel {
+        font-size: 26px;
+        height: 42px;
+        line-height: 42px;
+        position: relative;
+        left: -40px;
+        top:15px;
+        color: black;
+    }
+    
+    #hourSlot {
+        position: absolute;
+        height: 42px;
+        width: 200px;
+        -webkit-transform: rotateX(0deg);
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        transform: rotateX(0deg);
+    }
+    
+    #minuteSlot {
+        position: absolute;
+        height: 42px;
+        width: 200px;
+        -webkit-transform-style: preserve-3d;
+        -webkit-transform: rotateX(0deg);
+        transform-style: preserve-3d;
+        transform: rotateX(0deg);
+    }
+    
+    .cell {
+        list-style-type:none;
+        height: 42px;
+        color: #acacac;
+        font-size: 24px;
+        line-height: 36px;
+        position: absolute;
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+    }
+    
+    #activeArea {
+        width: 100%;
+        position: relative;
+        top: 95px;
+        border-style: solid;
+        border-color: #d5d5d5;
+        border-width: 1px;
+        height: 42px;
+    }
+    </style>
+    <div id="activeArea"></div>
+    <div id="slots">
+        <div id="hourSlotWrapper">
+            <ul id="hourSlot">
+            </ul>
+            <div id="timeLabel">HH:</div>
+        </div>
+        <div id="minuteSlotWrapper">
+            <ul id="minuteSlot"></ul>
+            <div id="timeLabel">MM:</div>
+        </div>
+    </div>
+</div>
